@@ -1,0 +1,16 @@
+.card
+{
+    margin: 0px;
+    text-align: center;
+}
+.card img
+{
+    transition: 0.3s ease-in-out;
+    margin-top: 2px;
+}
+
+.card img:hover
+{
+    transition: 00.3s ease-in-out;
+    transform: scale(1.1);
+}

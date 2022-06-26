@@ -1,0 +1,45 @@
+
+<div class="container d-flex">
+<table style="border-bottom: 2px;">
+    <tr>
+        <td><a><img src="../../assets/Top-Offers.PNG" height="90px" width="70px" style="margin: 0px 40px 0px 15px;"></a></td>
+        <td><a><img src="../../assets/Grocery.PNG" height="90px" width="70px" style="margin: 0px 40px 0px 40px;"></a></td>
+        <td><a><img src="../../assets/Mobils.PNG" height="90px" width="70px" style="margin: 0px 40px 0px 40px;"></a></td>
+        <td><a><img src="../../assets/Fasion.PNG" height="90px" width="70px" style="margin: 0px 40px 0px 40px;"></a></td>
+        <td><a><img src="../../assets/Electronics.PNG" height="90px" width="70px" style="margin: 0px 40px 0px 40px;"></a></td>
+        <td><a><img src="../../assets/Home1.PNG" height="90px" width="70px" style="margin: 0px 40px 0px 40px;"></a></td>
+        <td><a><img src="../../assets/Appliances.PNG" height="90px" width="70px" style="margin: 0px 40px 0px 40px;"></a></td>
+        <td><a><img src="../../assets/Travel.PNG" height="90px" width="70px" style="margin: 0px 40px 0px 40px;"></a></td>
+        <td><a><img src="../../assets/Toys.PNG" height="90px" width="70px" style="margin: 0px 20px 0px 40px;"></a></td>
+    </tr>
+    <tr>
+        <td style="text-align:center;"><a>Top Offers</a></td>
+        <td style="text-align:center;"><a>Grocery</a></td>
+        <td style="text-align:center;"><a>Mobiles</a></td>
+        <td style="text-align:center;"><a>Fashion</a></td>
+        <td style="text-align:center;"><a>Electronics</a></td>
+        <td style="text-align:center;"><a>Home</a></td>
+        <td style="text-align:center;"><a>Appliances</a></td>
+        <td style="text-align:center;"><a>Travel</a></td>
+        <td style="text-align:center;"><a>Toys,Beauty and More</a></td>
+    </tr>
+ </table>
+</div>
+
+
+<div class="row mt-5">
+    <div class="col-md-4 mb-3" *ngFor="let product of products">
+        <div class="card" style="width: 20rem; height:24rem">
+            <img class="card-img-top" src="../../assets/{{product.productImage}}" style="height: 10rem;" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">{{product.productName}}</h5>
+                <p class="card-text">{{product.productDescription}}</p>
+                <p><strong>Price:</strong>${{product.productMrp}}</p>
+                <a href="account" class="btn btn-primary">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- start features Area -->
+
